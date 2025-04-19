@@ -219,3 +219,14 @@ hashmap.c:126:12: error: return from incompatible pointer type [-Werror=incompat
             ^~~~~~~
 cc1.exe: all warnings being treated as errors
 a917c29
+Sat, Apr 19, 2025  1:31:53 AM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:126:12: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+     return buckets;
+            ^~~~~~~
+cc1.exe: all warnings being treated as errors
+6c61d50
