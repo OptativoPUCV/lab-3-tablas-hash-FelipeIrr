@@ -58,6 +58,7 @@ void insertMap(HashMap * map, char * key, void * value) {
                 i = 0;
             }
         }
+    }
 }
 
 void enlarge(HashMap * map) {
