@@ -49,13 +49,13 @@ void insertMap(HashMap * map, char * key, void * value) {
         Pair * current = map->buckets[index];
         while (current != NULL) {
             if (is_equal(current->key, key)) {
-                current->value = value; //update value
-                free(new); //free the new pair since we are not using it
+                current->value = value;
+                free(new);
                 return;
             }
-            current = current->next;
+            current = map->buckets[index+1];
         }
-        new->next = map->buckets[index]; //insert at the beginning of the list
+        new = map->buckets[index];
         map->buckets[index] = new;
         map->size++;
     }
