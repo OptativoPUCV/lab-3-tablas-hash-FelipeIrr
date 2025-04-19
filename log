@@ -1,0 +1,11 @@
+Sat, Apr 19, 2025 12:06:41 AM: 
+ hashmap.c | 72 +++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 63 insertions(+), 9 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'createMap':
+hashmap.c:74:32: error: implicit declaration of function 'mallcoc' [-Werror=implicit-function-declaration]
+     HashMap *mapa = (HashMap *)mallcoc(sizeof(HashMap));
+                                ^~~~~~~
+cc1.exe: all warnings being treated as errors
+eeef3b7
