@@ -176,3 +176,14 @@ Sat, Apr 19, 2025 12:59:09 AM:
  1 file changed, 1 insertion(+), 2 deletions(-)
  tests:  0|0
 fd75b89
+Sat, Apr 19, 2025  1:17:51 AM: 
+ hashmap.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:90:10: error: unused variable 'start' [-Werror=unused-variable]
+     long start = pos;
+          ^~~~~
+cc1.exe: all warnings being treated as errors
+72c4bbb
