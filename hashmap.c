@@ -73,8 +73,8 @@ void enlarge(HashMap * map) {
         map->buckets[i] = NULL;
     }
 
-    enlarge_called = 1; //no borrar (testing purposes)
-}*/
+    enlarge_called = 1; //no borrar (testing purposes)*/
+}
 
 HashMap * createMap(long capacity) {
     HashMap *mapa = (HashMap *)malloc(sizeof(HashMap));
