@@ -104,7 +104,6 @@ Pair * searchMap(HashMap * map,  char * key) {
     long pos = hash(key, map->capacity);
     for (int i = pos; i <= map->capacity; i++) {
         if (map->buckets[i] != NULL && is_equal(map->buckets[i]->key, key)) {
-            map->current = i;
             return map->buckets[i];
         }
         if (i == map->capacity) {
