@@ -259,3 +259,17 @@ Sat, Apr 19, 2025  1:40:03 AM:
  tests:  16|1
 total_score: 60/70
 838572e
+Sat, Apr 19, 2025  1:40:24 AM: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'enlarge':
+hashmap.c:66:10: error: unused variable 'old_capacity' [-Werror=unused-variable]
+     long old_capacity = map->capacity;
+          ^~~~~~~~~~~~
+hashmap.c:65:13: error: unused variable 'old_buckets' [-Werror=unused-variable]
+     Pair ** old_buckets = map->buckets;
+             ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+fd08b85
