@@ -70,6 +70,15 @@ void enlarge(HashMap * map) {
         map->buckets[i] = NULL;
     }
 
+    map->size = 0;
+    for (int i = 0; i < old_capacity; i++) {
+        if (old_buckets[i] != NULL) {
+            insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
+        }
+    }
+
+    free(old_buckets);
+
     enlarge_called = 1; //no borrar (testing purposes)*/
 }
 

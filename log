@@ -273,3 +273,9 @@ hashmap.c:65:13: error: unused variable 'old_buckets' [-Werror=unused-variable]
              ^~~~~~~~~~~
 cc1.exe: all warnings being treated as errors
 fd08b85
+Sat, Apr 19, 2025  1:51:13 AM: 
+ hashmap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ tests:  17|0
+total_score: 70/70
+e6ff4f6
